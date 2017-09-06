@@ -1,6 +1,6 @@
 var http = require("http");
 var fs = require("fs");
-var PORT = 7822;
+var PORT = 80;
 var server = http.createServer(handleRequest);
 function handleRequest(req, res) {
   fs.readFile("index.html", function(err, data) {
